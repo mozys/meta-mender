@@ -348,6 +348,10 @@ do_install() {
 }
 
 do_install:append:class-target:mender-systemd() {
+    # Move service files installed by cmake to correct dir and delete unused dirs to avoid QA issues
+    mv ${D}/lib/systemd/system/*.service ${D}${systemd_unitdir}/system/
+    rmdir ${D}/lib/systemd/system ${D}/lib/systemd ${D}/lib
+
     sed -i "s/WatchdogSec=86400/WatchdogSec=${MENDER_WATCHDOG_SEC}/" ${D}${systemd_unitdir}/system/mender-updated.service
 }
 
