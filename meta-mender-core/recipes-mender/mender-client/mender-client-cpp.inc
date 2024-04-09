@@ -347,6 +347,10 @@ do_install() {
     DESTDIR='${D}' cmake_runcmake_build --target install-dbus
 }
 
+do_install:append:class-target:mender-systemd() {
+    sed -i "s/WatchdogSec=86400/WatchdogSec=${MENDER_WATCHDOG_SEC}/" ${D}${systemd_unitdir}/system/mender-updated.service
+}
+
 # Native overrides, installing scripts for package mender-modules-gen
 EXTRA_OECMAKE:append:class-native = " -DMENDER_NO_BUILD=1"
 
