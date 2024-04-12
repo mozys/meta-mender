@@ -5,6 +5,7 @@ Subject: [PATCH 4/4] Disable CONFIG_BOOTCOMMAND and enable
  CONFIG_MENDER_BOOTCOMMAND.
 
 Signed-off-by: Kristian Amlie <kristian.amlie@northern.tech>
+Upstream-Status: Pending
 ---
  include/env_default.h | 4 ++--
  1 file changed, 2 insertions(+), 2 deletions(-)

@@ -6,6 +6,7 @@ Subject: [PATCH] Integration of Mender boot code into U-Boot.
 Signed-off-by: Kristian Amlie <kristian.amlie@mender.io>
 Signed-off-by: Maciej Borzecki <maciej.borzecki@rndity.com>
 Signed-off-by: Marcin Pasinski <marcin.pasinski@northern.tech>
+Upstream-Status: Pending
 ---
  include/env_default.h     | 3 +++
  scripts/Makefile.autoconf | 3 ++-
@@ -46,6 +47,3 @@ index 0ade91642a..c653f1afaa 100644
  endef
  
  include/config.h: scripts/Makefile.autoconf create_symlink FORCE
--- 
-2.17.1
-
