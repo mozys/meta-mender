@@ -10,15 +10,15 @@ charset-normalizer==2.1.1
     # via requests
 exceptiongroup==1.1.3
     # via pytest
-execnet==1.9.0
+execnet==2.1.1
     # via pytest-xdist
-filelock==3.13.3
+filelock==3.14.0
     # via -r requirements_py3.in
-idna==3.4
+idna==3.7
     # via requests
 iniconfig==2.0.0
     # via pytest
-jinja2==3.1.3
+jinja2==3.1.4
     # via pytest-html
 lzallright==0.2.3
     # via ubi-reader
@@ -26,9 +26,9 @@ markupsafe==2.1.3
     # via jinja2
 packaging==23.1
     # via pytest
-pluggy==1.4.0
+pluggy==1.5.0
     # via pytest
-pytest==8.1.1
+pytest==8.2.1
     # via
     #   -r requirements_py3.in
     #   pytest-html
@@ -40,13 +40,13 @@ pytest-metadata==3.1.1
     # via
     #   -r requirements_py3.in
     #   pytest-html
-pytest-xdist==3.5.0
+pytest-xdist==3.6.1
     # via -r requirements_py3.in
 python-lzo==1.15
     # via -r requirements_py3.in
 redo==2.0.4
     # via -r requirements_py3.in
-requests==2.31.0
+requests==2.32.2
     # via -r requirements_py3.in
 tomli==2.0.1
     # via pytest
